@@ -1,0 +1,252 @@
+/* Background */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #c4ddda;
+    /* light teal */
+}
+
+/* White form box */
+.auth-box {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 95%;
+    overflow: hidden;
+}
+
+/* Header bar */
+.auth-header {
+    background: #00695c;
+    /* dark teal */
+    padding: 15px;
+    padding-bottom: 35px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Form content */
+.auth-content {
+    padding: 30px;
+    padding-bottom: 80px;
+}
+
+/* Grid layout for inputs */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    /* 20px vertical, 40px horizontal gap */
+    margin-bottom: 20px;
+}
+
+.form-grid div {
+    position: relative;
+    /* for eye icon positioning */
+}
+
+.form-grid label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #00695c;
+}
+
+.form-grid input {
+    width: 100%;
+    padding: 8px 40px 8px 10px;
+    /* space for eye icon */
+    border: none;
+    border-bottom: 2px solid #00695c;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 8px 35px 8px 10px;
+    /* add right padding so eye doesn't overlap */
+    border: none;
+    border-bottom: 2px solid #00695c;
+    outline: none;
+    font-size: 14px;
+}
+
+.toggle-eye {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.full-width {
+    grid-column: span 2;
+}
+
+/* Sign up button */
+.signup-btn {
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px;
+    background: #00695c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.signup-btn:hover {
+    background: #004d40;
+}
+.auth-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #333;
+}
+
+.auth-content input {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.auth-content input:focus {
+    border-bottom: 1px solid #00695c;
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+    margin-top: 3px;
+}
+/* Login Header */
+.auth-header.login {
+    background: #00695c;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.auth-subtitle {
+    font-size: 13px;
+    color: #e0f2f1;
+    margin-top: 5px;
+}
+
+/* Inputs */
+.login-form {
+    text-align: center;
+    /* center labels */
+}
+
+.login-form label {
+    display: block;
+    width: 50%;
+    margin: 0 auto 5px;
+    /* align with inputs */
+    text-align: left;
+    /* keep label text aligned left inside centered block */
+    font-size: 12px;
+    font-weight: 600;
+    color: #00695c;
+}
+
+.login-form input {
+    width: 50%;
+    padding: 8px 40px 8px 10px;
+    border: none;
+    border-bottom: 2px solid #00695c;
+    outline: none;
+    font-size: 14px;
+    margin: 0 auto 20px;
+    display: block;
+    box-sizing: border-box;
+}
+
+/* Password wrapper */
+.password-wrapper {
+    position: relative;
+    width: 50%;
+    margin: 0 auto 20px;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+/* Eye icon */
+.password-wrapper .toggle-eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.login-form input:focus {
+    border-bottom: 2px solid #004d40;
+}
+
+/* Login Button */
+.login-btn {
+    width: 20%;
+    padding: 10px;
+    background: #00695c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin: 0 auto 20px;
+        /* centers input horizontally */
+    display: block;
+        /* required so margin:auto works */
+}
+
+.login-btn:hover {
+    background: #004d40;
+}
+
+/* Footer link */
+.login-footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.login-footer a {
+    color: #00695c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
