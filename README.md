@@ -58,6 +58,10 @@ npm start
 
 App will run at 👉 http://localhost:3000/
 
+🔗 Live Demo
+
+[Click here to view the app](https://loginsignup-tau.vercel.app/)
+
 
 ## 📸 Screenshots
 
